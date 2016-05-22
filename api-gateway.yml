@@ -13,7 +13,9 @@ spring:
         git:
           uri: https://github.com/mescanef/dromader-configs
 server:
-  port: 8888
+  port: 10000
+sidecar:
+  port: 8000
 endpoints:
   restart:
     enabled: true
@@ -23,7 +25,7 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: config
+    hostname: api-gateway
     nonSecurePort: 80
   client:
     registerWithEureka: true
@@ -41,7 +43,9 @@ spring:
         git:
           uri: https://github.com/mescanef/dromader-configs
 server:
-  port: 8888
+  port: 10000
+sidecar:
+  port: 8000
 endpoints:
   restart:
     enabled: true
@@ -56,4 +60,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://locahost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/

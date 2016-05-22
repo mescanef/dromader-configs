@@ -25,7 +25,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost/eureka/
+      defaultZone: http://discovery:8761/eureka/
 
 ---
 
@@ -42,7 +42,7 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: discovery
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
